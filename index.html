@@ -1,13 +1,226 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8" />
-  <title>My Personal Website</title>
-</head>
-<body>
-  <h1>Welcome to My Website</h1>
-  <p>Hello, I'm [Your Name], and I'm excited to share my projects with you!</p>
-  <!-- Link to your GitHub profile or specific repo -->
-  <p>Check out my <a href="https://github.com/YourUsername">GitHub</a> for more.</p>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>[Your Name] | PhD Student</title>
+    <meta
+      name="description"
+      content="Personal academic website for a PhD student featuring research, publications, teaching, projects, and contact information."
+    />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="preload" href="assets/profile-placeholder.svg" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="ambient ambient-one"></div>
+      <div class="ambient ambient-two"></div>
+
+      <header class="site-header">
+        <div class="container nav-wrap">
+          <a class="brand" href="#top" aria-label="Homepage">
+            <span class="brand-mark">PhD</span>
+            <span class="brand-copy">
+              <strong data-field="fullName">[Your Name]</strong>
+              <span data-field="shortTag">Researcher</span>
+            </span>
+          </a>
+
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-nav"
+            aria-label="Toggle navigation"
+          >
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="site-nav" id="site-nav" aria-label="Primary">
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#publications">Publications</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main id="top">
+        <section class="hero section">
+          <div class="container hero-grid">
+            <div class="hero-copy reveal">
+              <p class="eyebrow" data-field="eyebrow">PhD Student</p>
+              <h1 data-field="fullName">[Your Name]</h1>
+              <p class="hero-role" data-field="title">PhD Student in [Your Field]</p>
+              <p class="hero-summary" data-field="heroSummary">
+                I study how thoughtful research can create meaningful impact across technology, society, and the people who use it.
+              </p>
+
+              <div class="hero-actions">
+                <a class="button button-primary" data-field="primaryCtaUrl" href="#contact">
+                  Get in touch
+                </a>
+                <a class="button button-secondary" data-field="secondaryCtaUrl" href="#publications">
+                  View publications
+                </a>
+              </div>
+
+              <dl class="hero-metrics" id="metrics-list"></dl>
+            </div>
+
+            <aside class="hero-card reveal">
+              <div class="portrait-wrap">
+                <img
+                  id="profile-image"
+                  src="assets/profile-placeholder.svg"
+                  alt="Portrait placeholder"
+                />
+              </div>
+              <div class="hero-card-copy">
+                <p class="card-label">Current affiliation</p>
+                <h2 data-field="affiliation">[University / Lab Name]</h2>
+                <p data-field="affiliationSummary">
+                  Working on rigorous, human-centered research with strong interdisciplinary foundations.
+                </p>
+              </div>
+              <ul class="quick-facts" id="quick-facts-list"></ul>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section" id="about">
+          <div class="container section-grid">
+            <div class="section-heading reveal">
+              <p class="eyebrow">About</p>
+              <h2>Research with clarity, care, and ambition.</h2>
+            </div>
+            <div class="section-body reveal">
+              <p class="lead" data-field="aboutLead"></p>
+              <div class="split-copy">
+                <p data-field="aboutBodyOne"></p>
+                <p data-field="aboutBodyTwo"></p>
+              </div>
+              <div class="callout">
+                <p class="callout-label">Current focus</p>
+                <p data-field="currentFocus"></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="research">
+          <div class="container">
+            <div class="section-intro reveal">
+              <p class="eyebrow">Research Themes</p>
+              <h2>Questions that guide the work.</h2>
+              <p data-field="researchIntro"></p>
+            </div>
+            <div class="card-grid" id="research-list"></div>
+          </div>
+        </section>
+
+        <section class="section section-alt" id="publications">
+          <div class="container">
+            <div class="section-intro reveal">
+              <p class="eyebrow">Selected Work</p>
+              <h2>Publications and manuscripts.</h2>
+              <p>
+                Replace these entries with your own papers, preprints, and ongoing manuscripts.
+              </p>
+            </div>
+            <div class="publication-list" id="publications-list"></div>
+          </div>
+        </section>
+
+        <section class="section" id="experience">
+          <div class="container">
+            <div class="section-intro reveal">
+              <p class="eyebrow">Experience</p>
+              <h2>Teaching, projects, and academic service.</h2>
+              <p data-field="experienceIntro"></p>
+            </div>
+
+            <div class="three-up">
+              <div class="panel reveal">
+                <div class="panel-header">
+                  <h3>Teaching</h3>
+                  <p>Courses, mentoring, and instructional work.</p>
+                </div>
+                <div class="stack-list" id="teaching-list"></div>
+              </div>
+
+              <div class="panel reveal">
+                <div class="panel-header">
+                  <h3>Projects</h3>
+                  <p>Collaborations, prototypes, and interdisciplinary outputs.</p>
+                </div>
+                <div class="stack-list" id="projects-list"></div>
+              </div>
+
+              <div class="panel reveal">
+                <div class="panel-header">
+                  <h3>Service</h3>
+                  <p>Community building, reviewing, and professional contributions.</p>
+                </div>
+                <div class="stack-list" id="service-list"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="timeline">
+          <div class="container">
+            <div class="section-intro reveal">
+              <p class="eyebrow">Journey</p>
+              <h2>A concise academic timeline.</h2>
+              <p>
+                Use this section to help visitors understand your trajectory at a glance.
+              </p>
+            </div>
+            <div class="timeline" id="timeline-list"></div>
+          </div>
+        </section>
+
+        <section class="section section-alt" id="updates">
+          <div class="container updates-grid">
+            <div class="section-intro reveal">
+              <p class="eyebrow">Updates</p>
+              <h2>News, talks, and what is next.</h2>
+              <p data-field="updatesIntro"></p>
+            </div>
+            <div class="updates-column reveal">
+              <div class="news-list" id="news-list"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="contact">
+          <div class="container contact-card reveal">
+            <div>
+              <p class="eyebrow">Contact</p>
+              <h2 data-field="contactHeading"></h2>
+              <p data-field="contactBody"></p>
+            </div>
+            <div class="contact-actions" id="contact-links"></div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-wrap">
+          <p>
+            <span data-field="fullName">[Your Name]</span>
+            <span data-field="footerNote">PhD student website template</span>
+          </p>
+          <a href="#top">Back to top</a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="content.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
