@@ -1,0 +1,23 @@
+<svg width="1200" height="1400" viewBox="0 0 1200 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1400" rx="72" fill="url(#bg)"/>
+  <circle cx="870" cy="226" r="172" fill="url(#glow)" fill-opacity="0.65"/>
+  <circle cx="240" cy="1190" r="210" fill="#F6E7D4" fill-opacity="0.72"/>
+  <path d="M324 1128C324 919.752 492.752 751 701 751C909.248 751 1078 919.752 1078 1128V1260H324V1128Z" fill="#FBF5ED"/>
+  <circle cx="699" cy="474" r="234" fill="#FBF5ED"/>
+  <path d="M441 564C474.5 684.5 582 772 710.5 772C839 772 946 684.5 979.5 564C929.5 502 850 462 710.5 462C571 462 491 502 441 564Z" fill="#D6A98B"/>
+  <path d="M476 492C525 397 604 338 700 338C796 338 875 397 924 492C901.5 521.5 832.5 545 700 545C567.5 545 498.5 521.5 476 492Z" fill="#314D4B"/>
+  <path d="M381 1248H1027" stroke="#D6B892" stroke-width="22" stroke-linecap="round"/>
+  <rect x="105" y="102" width="364" height="114" rx="57" fill="#FFF8EE" fill-opacity="0.78"/>
+  <text x="153" y="172" fill="#7C3522" font-family="Georgia, serif" font-size="62" font-weight="700">Your Portrait</text>
+  <defs>
+    <linearGradient id="bg" x1="110" y1="101" x2="1025" y2="1282" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C6D7D1"/>
+      <stop offset="0.5" stop-color="#E8D7C4"/>
+      <stop offset="1" stop-color="#B88B73"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(870 226) rotate(90) scale(172)">
+      <stop stop-color="#FFF8EE"/>
+      <stop offset="1" stop-color="#FFF8EE" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>
